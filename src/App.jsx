@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-      
-      
+      //Acá se supone que solo llame a las otras cosas q voy a crear
+
     </>
   )
 }
