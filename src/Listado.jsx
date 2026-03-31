@@ -12,4 +12,4 @@ return (
 )
 }
 
-export{Listado}
+export default Listado

@@ -29,4 +29,4 @@ function Formulario(){
 </div>)
 }
 
-export{Formulario}
+export default Formulario

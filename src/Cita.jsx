@@ -17,4 +17,4 @@ function Cita(){
 )
 }
 
-export {Cita}
+export default Cita
