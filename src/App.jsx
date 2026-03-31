@@ -12,6 +12,10 @@ function App() {
   return (
     <>
     <title>Administración de Pacientes</title>
+    <div id="root">
+      <h1>ADMINISTRADOR DE PACIENTES</h1>
+      </div>
+      <div class="container"></div>
     <Formulario/>
     <Listado/>
     </>
