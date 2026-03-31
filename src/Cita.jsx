@@ -1,6 +1,9 @@
-<div>
-        <div class="one-half column">
-            <h2>Administra tus citas</h2>
+import './Cita.css'
+
+function Cita(){
+  return(
+  <div>
+        <div class="one-half column">           
             <div class="cita">
               <p>Mascota: <span>Nina</span></p>
               <p>Dueño: <span>Martin</span></p>
@@ -11,3 +14,7 @@
             </div>
           </div>
         </div>
+)
+}
+
+export {Cita}
