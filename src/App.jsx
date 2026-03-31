@@ -16,8 +16,19 @@ function App() {
       <h1>ADMINISTRADOR DE PACIENTES</h1>
       </div>
       <div class="container"></div>
-    <Formulario/>
-    <Listado/>
+
+
+    <div class="row">
+      
+        <div class="one-half column">
+          <Formulario/>
+        </div>
+
+        <div class="one-half column">
+         <Listado/>
+        </div>
+        
+    </div>
     </>
   )
 }
