@@ -14,20 +14,20 @@ function App() {
     <title>Administración de Pacientes</title>
     <div id="root">
       <h1>ADMINISTRADOR DE PACIENTES</h1>
-      </div>
-      <div class="container"></div>
+      
+      <div class="container">
 
 
     <div class="row">
       
-        <div class="one-half column">
-          <Formulario/>
-        </div>
-
-        <div class="one-half column">
-         <Listado/>
-        </div>
         
+          <Formulario/>
+     
+
+        
+         <Listado/>
+         </div>
+        </div>
     </div>
     </>
   )

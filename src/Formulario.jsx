@@ -1,6 +1,7 @@
 import './Formulario.css'
 function Formulario(){
     return(
+        <>
 <div class="one-half column">
 
      <h2>Crear mi Cita</h2>
@@ -26,7 +27,8 @@ function Formulario(){
                 
                 <button type="submit" class="u-full-width button-primary">Agregar Cita</button>
             </form>       
-</div>)
+</div>
+</>)
 }
 
 export default Formulario

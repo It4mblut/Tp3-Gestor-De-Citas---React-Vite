@@ -2,8 +2,7 @@ import './Cita.css'
 
 function Cita(){
   return(
-  <div>
-        <div class="one-half column">           
+  <>    
             <div class="cita">
               <p>Mascota: <span>Nina</span></p>
               <p>Dueño: <span>Martin</span></p>
@@ -12,8 +11,7 @@ function Cita(){
               <p>Sintomas: <span>Le duele la pierna</span></p>
               <button class="button elimnar u-full-width">Eliminar ×</button>
             </div>
-          </div>
-        </div>
+        </>
 )
 }
 
