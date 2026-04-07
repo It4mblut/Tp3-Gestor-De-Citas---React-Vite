@@ -12,6 +12,10 @@ function App() {
 
   const agregarCita = (cita) => {setCitas([...citas, cita])};
 
+  const eliminarCita = (index) => {
+    setCitas(citas.filter((_, i) => i !== index));
+  };
+
   return (
     <>
       <h1>ADMINISTRADOR DE PACIENTES</h1>
@@ -20,7 +24,7 @@ function App() {
         <div className="row">
 
           <Formulario agregarCita={agregarCita} />
-          <Listado citas={citas} />
+          <Listado citas={citas} eliminarCita={eliminarCita} />
 
         </div>
       </div>

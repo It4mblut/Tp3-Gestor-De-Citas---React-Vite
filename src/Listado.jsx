@@ -1,7 +1,7 @@
 import './Listado.css'
 import './Cita.css'
 
-function Listado({ citas }) {
+function Listado({ citas, eliminarCita }) {
   return (
     <div className="one-half column">
       <h2>Administra tus citas</h2>
@@ -13,7 +13,14 @@ function Listado({ citas }) {
           <p>Fecha: <span>{cita.fecha}</span></p>
           <p>Hora: <span>{cita.hora}</span></p>
           <p>Sintomas: <span>{cita.sintomas}</span></p>
-          <button className="button eliminar u-full-width">
+          <button
+            className="button eliminar u-full-width"
+            onClick={() => {
+              if (confirm('¿Estás seguro que quieres eliminar esta cita?')) {
+                eliminarCita(index)
+              }
+            }}
+          >
             Eliminar ×
           </button>
         </div>
