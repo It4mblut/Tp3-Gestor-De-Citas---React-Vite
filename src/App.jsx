@@ -7,28 +7,23 @@ import Formulario from './Formulario.jsx'
 import Listado from './Listado.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [citas, setCitas] = useState([]);
+
+  const agregarCita = (cita) => {setCitas([...citas, cita])};
 
   return (
     <>
-    <title>Administración de Pacientes</title>
-    <div id="root">
       <h1>ADMINISTRADOR DE PACIENTES</h1>
-      
-      <div class="container">
 
+      <div className="container">
+        <div className="row">
 
-    <div class="row">
-      
-        
-          <Formulario/>
-     
+          <Formulario agregarCita={agregarCita} />
+          <Listado citas={citas} />
 
-        
-         <Listado/>
-         </div>
         </div>
-    </div>
+      </div>
     </>
   )
 }

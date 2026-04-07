@@ -1,15 +1,27 @@
 import './Listado.css'
-import Cita from './Cita.jsx'
+import { useState } from "react";
 
-function Listado(){    
-return (
-<div class="one-half column">
-    <h2>Administra tus citas</h2>
-    <Cita/>
-    <Cita/>
-    <Cita/>
-</div>
-)
+
+function Listado({ citas }) {
+  return (
+    <div className="one-half column">
+      <h2>Administra tus citas</h2>
+
+      {citas.map((cita, index) => (
+        <div className="cita" key={index}>
+          <p>Mascota: <span>{cita.mascota}</span></p>
+          <p>Dueño: <span>{cita.dueño}</span></p>
+          <p>Fecha: <span>{cita.fecha}</span></p>
+          <p>Hora: <span>{cita.hora}</span></p>
+          <p>Sintomas: <span>{cita.sintomas}</span></p>
+          <button className="button eliminar u-full-width">
+            Eliminar ×
+          </button>
+        </div>
+      ))}
+
+    </div>
+  )
 }
 
-export default Listado
+export default Listado;
